@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - Website Structure | Everyday AI</title>
+    <meta name="description" content="Navigate our website easily with this comprehensive sitemap showing all pages and sections about artificial intelligence and its applications.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .sitemap-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .sitemap-section {
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .sitemap-section h2 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sitemap-list li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .sitemap-list a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-sm);
+            border-radius: var(--border-radius);
+            transition: background-color 0.3s ease;
+        }
+
+        .sitemap-list a:hover {
+            background-color: var(--background-alt);
+            color: var(--primary-color);
+        }
+
+        .sitemap-list .description {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: var(--spacing-xs);
+            margin-left: var(--spacing-lg);
+        }
+
+        .sitemap-icon {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .sitemap-card {
+            background-color: var(--background-alt);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+        }
+
+        .sitemap-card h3 {
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-color);
+        }
+
+        .sitemap-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sitemap-card li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .sitemap-card a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sitemap-card a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Everyday AI</a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="uses.html" class="nav-link">Use Cases</a></li>
+                <li><a href="work.html" class="nav-link">Work</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="health.html" class="nav-link">Health</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Sitemap</h1>
+            <p class="mb-3">Find everything you need with our comprehensive website guide</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        <div class="sitemap-content">
+            <!-- Main Pages -->
+            <section class="sitemap-section">
+                <h2>Main Pages</h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="index.html">
+                            <img src="images/home-icon.png" alt="Home" class="sitemap-icon">
+                            Home
+                        </a>
+                        <div class="description">Your gateway to understanding AI in everyday life</div>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <img src="images/about-icon.png" alt="About" class="sitemap-icon">
+                            About AI
+                        </a>
+                        <div class="description">Understanding artificial intelligence and its evolution</div>
+                    </li>
+                    <li>
+                        <a href="uses.html">
+                            <img src="images/uses-icon.png" alt="Uses" class="sitemap-icon">
+                            Use Cases
+                        </a>
+                        <div class="description">Real-world applications of AI in daily life</div>
+                    </li>
+                    <li>
+                        <a href="work.html">
+                            <img src="images/work-icon.png" alt="Work" class="sitemap-icon">
+                            AI at Work
+                        </a>
+                        <div class="description">How AI is transforming the workplace</div>
+                    </li>
+                    <li>
+                        <a href="education.html">
+                            <img src="images/education-icon.png" alt="Education" class="sitemap-icon">
+                            Education
+                        </a>
+                        <div class="description">AI's role in learning and teaching</div>
+                    </li>
+                    <li>
+                        <a href="health.html">
+                            <img src="images/health-icon.png" alt="Health" class="sitemap-icon">
+                            Health
+                        </a>
+                        <div class="description">AI applications in healthcare and fitness</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Tools and Tutorials -->
+            <section class="sitemap-section">
+                <h2>Tools and Tutorials</h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="tools.html">
+                            <img src="images/tools-icon.png" alt="Tools" class="sitemap-icon">
+                            AI Tools
+                        </a>
+                        <div class="description">Popular AI tools and applications</div>
+                    </li>
+                    <li>
+                        <a href="tutorials.html">
+                            <img src="images/tutorials-icon.png" alt="Tutorials" class="sitemap-icon">
+                            Tutorials
+                        </a>
+                        <div class="description">Step-by-step guides for using AI tools</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Blog Section -->
+            <section class="sitemap-section">
+                <h2>Blog</h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="blog.html">
+                            <img src="images/blog-icon.png" alt="Blog" class="sitemap-icon">
+                            Blog Home
+                        </a>
+                        <div class="description">Latest articles and insights about AI</div>
+                    </li>
+                    <li>
+                        <a href="post1.html">
+                            <img src="images/post-icon.png" alt="Post" class="sitemap-icon">
+                            How AI Changed My Morning Routine
+                        </a>
+                        <div class="description">Personal experience with AI integration</div>
+                    </li>
+                    <li>
+                        <a href="post2.html">
+                            <img src="images/post-icon.png" alt="Post" class="sitemap-icon">
+                            The Best AI Tools of 2025
+                        </a>
+                        <div class="description">Comprehensive guide to AI tools</div>
+                    </li>
+                    <li>
+                        <a href="post3.html">
+                            <img src="images/post-icon.png" alt="Post" class="sitemap-icon">
+                            Is Artificial Intelligence Taking Over?
+                        </a>
+                        <div class="description">Balanced perspective on AI's impact</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Information Pages -->
+            <section class="sitemap-section">
+                <h2>Information</h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="contact.html">
+                            <img src="images/contact-icon.png" alt="Contact" class="sitemap-icon">
+                            Contact Us
+                        </a>
+                        <div class="description">Get in touch with our team</div>
+                    </li>
+                    <li>
+                        <a href="privacy.html">
+                            <img src="images/privacy-icon.png" alt="Privacy" class="sitemap-icon">
+                            Privacy Policy
+                        </a>
+                        <div class="description">How we protect your privacy</div>
+                    </li>
+                    <li>
+                        <a href="sitemap.html">
+                            <img src="images/sitemap-icon.png" alt="Sitemap" class="sitemap-icon">
+                            Sitemap
+                        </a>
+                        <div class="description">Complete website structure</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Quick Access -->
+            <section class="sitemap-grid">
+                <div class="sitemap-card">
+                    <h3>Popular Topics</h3>
+                    <ul>
+                        <li><a href="about.html#what-is-ai">What is AI?</a></li>
+                        <li><a href="uses.html#daily-life">AI in Daily Life</a></li>
+                        <li><a href="work.html#future">Future of Work</a></li>
+                        <li><a href="tools.html#free">Free AI Tools</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-card">
+                    <h3>Learning Resources</h3>
+                    <ul>
+                        <li><a href="tutorials.html#beginners">Beginner's Guide</a></li>
+                        <li><a href="tutorials.html#chatgpt">Using ChatGPT</a></li>
+                        <li><a href="tutorials.html#dalle">Creating AI Art</a></li>
+                        <li><a href="education.html#resources">Educational Tools</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-card">
+                    <h3>Latest Updates</h3>
+                    <ul>
+                        <li><a href="blog.html#latest">Recent Articles</a></li>
+                        <li><a href="tools.html#new">New AI Tools</a></li>
+                        <li><a href="future.html#trends">AI Trends</a></li>
+                        <li><a href="news.html">AI News</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Everyday AI</h3>
+                <p>Empowering you to understand and harness the power of artificial intelligence in your daily life.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About AI</a></li>
+                    <li><a href="tools.html">AI Tools</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest AI news and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <p>&copy; 2025 Everyday AI. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</body>
+</html> 

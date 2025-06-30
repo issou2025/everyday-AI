@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutorials - Step-by-Step Guides for Using AI Tools | Everyday AI</title>
+    <meta name="description" content="Learn how to use popular AI tools with our detailed tutorials. From writing with ChatGPT to creating AI art and automating tasks with AI.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .tutorial-steps {
+            counter-reset: step;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tutorial-step {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .tutorial-step::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2rem;
+            height: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .tutorial-image {
+            max-width: 100%;
+            border-radius: var(--border-radius);
+            margin: var(--spacing-md) 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .pro-tip {
+            background-color: var(--background-alt);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            margin: var(--spacing-md) 0;
+        }
+
+        .pro-tip::before {
+            content: "💡 Pro Tip:";
+            font-weight: bold;
+            display: block;
+            margin-bottom: var(--spacing-sm);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Everyday AI</a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="uses.html" class="nav-link">Use Cases</a></li>
+                <li><a href="work.html" class="nav-link">Work</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="health.html" class="nav-link">Health</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Step-by-Step AI Tutorials</h1>
+            <p class="mb-3">Master popular AI tools with our detailed guides and practical examples.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        <!-- Introduction -->
+        <section class="mb-4">
+            <h2>Getting Started with AI Tools</h2>
+            <p>Our tutorials are designed to help you quickly learn and make the most of various AI tools. Each guide includes detailed steps, screenshots, and practical tips for real-world applications.</p>
+        </section>
+
+        <!-- ChatGPT Tutorial -->
+        <section class="mb-4" id="chatgpt">
+            <h2>How to Use ChatGPT to Write an Essay</h2>
+            <div class="card">
+                <p class="mb-2">Learn how to use ChatGPT to help you write well-structured, engaging essays while maintaining your unique voice.</p>
+                
+                <ol class="tutorial-steps">
+                    <li class="tutorial-step">
+                        <h3>Access ChatGPT</h3>
+                        <p>Visit chat.openai.com and sign in to your account. If you don't have one, create a free account.</p>
+                        <img src="images/chatgpt-login.png" alt="ChatGPT login screen" class="tutorial-image">
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Define Your Essay Topic</h3>
+                        <p>Start by clearly stating your essay topic and any specific requirements:</p>
+                        <code>I need help writing a 1000-word essay about the impact of artificial intelligence on healthcare. The essay should include current examples and future predictions.</code>
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Request an Outline</h3>
+                        <p>Ask ChatGPT to create a structured outline:</p>
+                        <code>Can you create a detailed outline for this essay with main points and subpoints?</code>
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Generate Section Content</h3>
+                        <p>Work through each section of the outline, asking ChatGPT to expand on specific points:</p>
+                        <code>Please help me write the introduction section, focusing on capturing reader attention and stating the main thesis.</code>
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Review and Refine</h3>
+                        <p>Ask ChatGPT to help improve your content:</p>
+                        <code>Can you suggest ways to make this paragraph more engaging and add relevant examples?</code>
+                    </li>
+                </ol>
+
+                <div class="pro-tip">
+                    Always fact-check ChatGPT's outputs and add your personal insights. The tool should assist your writing process, not replace your voice entirely.
+                </div>
+            </div>
+        </section>
+
+        <!-- DALL·E Tutorial -->
+        <section class="mb-4" id="dalle">
+            <h2>Create AI-Generated Art in 5 Minutes</h2>
+            <div class="card">
+                <p class="mb-2">Learn how to use DALL·E to create stunning artwork from text descriptions.</p>
+
+                <ol class="tutorial-steps">
+                    <li class="tutorial-step">
+                        <h3>Access DALL·E</h3>
+                        <p>Visit labs.openai.com and sign in with your OpenAI account.</p>
+                        <img src="images/dalle-interface.png" alt="DALL·E interface" class="tutorial-image">
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Craft Your Prompt</h3>
+                        <p>Write a detailed description of the image you want to create:</p>
+                        <code>A serene Japanese garden at sunset, with cherry blossoms falling, a small wooden bridge over a koi pond, in the style of Studio Ghibli, digital art</code>
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Adjust Parameters</h3>
+                        <p>Choose your preferred size and number of variations.</p>
+                        <div class="pro-tip">
+                            More detailed prompts generally produce better results. Include style, lighting, and mood in your descriptions.
+                        </div>
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Generate and Iterate</h3>
+                        <p>Click generate and review your results. If needed, adjust your prompt and try again.</p>
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Edit and Export</h3>
+                        <p>Use DALL·E's editing features to make final adjustments, then download your image.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Google Sheets AI Tutorial -->
+        <section class="mb-4" id="sheets">
+            <h2>Automate Tasks with AI in Google Sheets</h2>
+            <div class="card">
+                <p class="mb-2">Learn how to use AI features in Google Sheets to automate data analysis and formatting.</p>
+
+                <ol class="tutorial-steps">
+                    <li class="tutorial-step">
+                        <h3>Access Google Sheets</h3>
+                        <p>Open Google Sheets and create a new spreadsheet or open an existing one.</p>
+                        <img src="images/sheets-interface.png" alt="Google Sheets interface" class="tutorial-image">
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Use Smart Fill</h3>
+                        <p>Enter a pattern of data and let AI detect and complete the pattern:</p>
+                        <ul>
+                            <li>Enter example data in a column</li>
+                            <li>Start typing in the next cell</li>
+                            <li>Watch for the gray suggestion</li>
+                            <li>Press Enter to accept</li>
+                        </ul>
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Create Smart Formulas</h3>
+                        <p>Use natural language to create formulas:</p>
+                        <code>Type "=" followed by your request, like "=average of sales in January"</code>
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Generate Charts</h3>
+                        <p>Let AI suggest the best chart type for your data:</p>
+                        <ul>
+                            <li>Select your data</li>
+                            <li>Click "Insert > Chart"</li>
+                            <li>Review AI suggestions</li>
+                        </ul>
+                    </li>
+
+                    <li class="tutorial-step">
+                        <h3>Use Smart Cleanup</h3>
+                        <p>Let AI identify and fix data inconsistencies:</p>
+                        <ul>
+                            <li>Click "Data > Clean up"</li>
+                            <li>Review suggestions</li>
+                            <li>Apply recommended changes</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <div class="pro-tip">
+                    Combine multiple AI features to create powerful automated workflows. For example, use Smart Fill to standardize data, then create AI-suggested charts for visualization.
+                </div>
+            </div>
+        </section>
+
+        <!-- More Tutorials Coming Soon -->
+        <section class="mb-4">
+            <h2>More Tutorials Coming Soon</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>AI for Video Editing</h3>
+                    <p>Learn how to use AI tools to enhance and automate your video editing workflow.</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <div class="card">
+                    <h3>AI Music Composition</h3>
+                    <p>Create original music tracks using AI composition tools.</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <div class="card">
+                    <h3>AI for Business Analytics</h3>
+                    <p>Leverage AI to gain insights from your business data.</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center mb-4">
+            <h2>Ready to Try These Tools?</h2>
+            <p class="mb-3">Check out our curated list of AI tools and start experimenting today.</p>
+            <a href="tools.html" class="btn btn-primary">Explore AI Tools</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Everyday AI</h3>
+                <p>Empowering you to understand and harness the power of artificial intelligence in your daily life.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About AI</a></li>
+                    <li><a href="tools.html">AI Tools</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest AI news and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <p>&copy; 2025 Everyday AI. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</body>
+</html> 

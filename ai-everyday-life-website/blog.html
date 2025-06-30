@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Blog - Latest Articles and Insights | Everyday AI</title>
+    <meta name="description" content="Read our latest blog posts about artificial intelligence, including practical tips, industry trends, and real-world applications of AI technology.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1963782565227057"
+         crossorigin="anonymous"></script>
+    
+    <style>
+        .blog-post {
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .blog-post-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            color: var(--text-light);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .blog-meta span {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .blog-categories {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .blog-category {
+            background-color: var(--background-alt);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius);
+            font-size: 0.875rem;
+        }
+
+        .blog-excerpt {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .blog-sidebar {
+            position: sticky;
+            top: var(--spacing-xl);
+        }
+
+        .search-form {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: var(--spacing-sm);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .category-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .category-list li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .category-list a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-count {
+            background-color: var(--background-alt);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.875rem;
+        }
+
+        .popular-posts {
+            list-style: none;
+            padding: 0;
+        }
+
+        .popular-post {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .popular-post-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+        }
+
+        .popular-post-content h4 {
+            margin: 0 0 var(--spacing-xs);
+            font-size: 1rem;
+        }
+
+        .popular-post-meta {
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Everyday AI</a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="uses.html" class="nav-link">Use Cases</a></li>
+                <li><a href="work.html" class="nav-link">Work</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="health.html" class="nav-link">Health</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>AI Blog</h1>
+            <p class="mb-3">Explore the latest insights, trends, and practical applications of artificial intelligence.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        <div class="grid">
+            <!-- Blog Posts -->
+            <div class="col-8">
+                <!-- Featured Post -->
+                <article class="blog-post card">
+                    <img src="images/ai-morning-routine.jpg" alt="AI Morning Routine" class="blog-post-image">
+                    <div class="blog-meta">
+                        <span>
+                            <img src="images/calendar-icon.png" alt="Calendar" width="16" height="16">
+                            June 30, 2025
+                        </span>
+                        <span>
+                            <img src="images/clock-icon.png" alt="Clock" width="16" height="16">
+                            5 min read
+                        </span>
+                        <span>
+                            <img src="images/user-icon.png" alt="Author" width="16" height="16">
+                            Sarah Chen
+                        </span>
+                    </div>
+                    <div class="blog-categories">
+                        <span class="blog-category">Lifestyle</span>
+                        <span class="blog-category">Productivity</span>
+                    </div>
+                    <h2>How AI Changed My Morning Routine</h2>
+                    <p class="blog-excerpt">Discover how integrating AI-powered devices and apps into your morning routine can boost productivity, improve health tracking, and make your day more efficient...</p>
+                    <a href="post1.html" class="btn btn-primary">Read More</a>
+                </article>
+
+                <!-- Blog Ad -->
+                <div class="ad-container text-center">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1963782565227057"
+                         data-ad-slot="9012345678"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- Regular Posts -->
+                <article class="blog-post card">
+                    <img src="images/best-ai-tools.jpg" alt="Best AI Tools" class="blog-post-image">
+                    <div class="blog-meta">
+                        <span>
+                            <img src="images/calendar-icon.png" alt="Calendar" width="16" height="16">
+                            June 28, 2025
+                        </span>
+                        <span>
+                            <img src="images/clock-icon.png" alt="Clock" width="16" height="16">
+                            8 min read
+                        </span>
+                        <span>
+                            <img src="images/user-icon.png" alt="Author" width="16" height="16">
+                            Michael Park
+                        </span>
+                    </div>
+                    <div class="blog-categories">
+                        <span class="blog-category">Tools</span>
+                        <span class="blog-category">Technology</span>
+                    </div>
+                    <h2>The Best AI Tools of 2025</h2>
+                    <p class="blog-excerpt">Our comprehensive guide to the most impactful AI tools that are transforming various industries, from content creation to data analysis...</p>
+                    <a href="post2.html" class="btn btn-primary">Read More</a>
+                </article>
+
+                <article class="blog-post card">
+                    <img src="images/ai-future.jpg" alt="AI Future" class="blog-post-image">
+                    <div class="blog-meta">
+                        <span>
+                            <img src="images/calendar-icon.png" alt="Calendar" width="16" height="16">
+                            June 25, 2025
+                        </span>
+                        <span>
+                            <img src="images/clock-icon.png" alt="Clock" width="16" height="16">
+                            6 min read
+                        </span>
+                        <span>
+                            <img src="images/user-icon.png" alt="Author" width="16" height="16">
+                            Dr. Emily Rodriguez
+                        </span>
+                    </div>
+                    <div class="blog-categories">
+                        <span class="blog-category">Future</span>
+                        <span class="blog-category">Society</span>
+                    </div>
+                    <h2>Is Artificial Intelligence Taking Over?</h2>
+                    <p class="blog-excerpt">A balanced look at AI's impact on society and what it means for our future, addressing both the opportunities and challenges ahead...</p>
+                    <a href="post3.html" class="btn btn-primary">Read More</a>
+                </article>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-4">
+                <aside class="blog-sidebar">
+                    <!-- Search -->
+                    <div class="card mb-4">
+                        <h3>Search</h3>
+                        <form class="search-form">
+                            <input type="search" class="search-input" placeholder="Search articles...">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="card mb-4">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Technology <span class="category-count">12</span></a></li>
+                            <li><a href="#">AI Tools <span class="category-count">8</span></a></li>
+                            <li><a href="#">Tutorials <span class="category-count">6</span></a></li>
+                            <li><a href="#">Future <span class="category-count">5</span></a></li>
+                            <li><a href="#">Society <span class="category-count">4</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="card mb-4">
+                        <h3>Popular Posts</h3>
+                        <ul class="popular-posts">
+                            <li class="popular-post">
+                                <img src="images/ai-education.jpg" alt="AI in Education" class="popular-post-image">
+                                <div class="popular-post-content">
+                                    <h4>The Future of AI in Education</h4>
+                                    <div class="popular-post-meta">June 20, 2025</div>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <img src="images/ai-healthcare.jpg" alt="AI in Healthcare" class="popular-post-image">
+                                <div class="popular-post-content">
+                                    <h4>AI Breakthroughs in Healthcare</h4>
+                                    <div class="popular-post-meta">June 15, 2025</div>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <img src="images/ai-privacy.jpg" alt="AI Privacy" class="popular-post-image">
+                                <div class="popular-post-content">
+                                    <h4>Protecting Privacy in the AI Age</h4>
+                                    <div class="popular-post-meta">June 10, 2025</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Sidebar Ad -->
+                    <div class="ad-container text-center mb-4">
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:300px;height:600px"
+                             data-ad-client="ca-pub-1963782565227057"
+                             data-ad-slot="0123456789"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="card">
+                        <h3>Newsletter</h3>
+                        <p>Get the latest AI insights delivered to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="form-input" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Everyday AI</h3>
+                <p>Empowering you to understand and harness the power of artificial intelligence in your daily life.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About AI</a></li>
+                    <li><a href="tools.html">AI Tools</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest AI news and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <p>&copy; 2025 Everyday AI. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</body>
+</html> 
