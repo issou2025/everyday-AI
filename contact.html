@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Get in Touch | Everyday AI</title>
+    <meta name="description" content="Contact the Everyday AI team with your questions, feedback, or inquiries about artificial intelligence and its applications.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 500;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: var(--spacing-sm);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-family: var(--font-primary);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+        }
+
+        textarea.form-input {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-info {
+            background-color: var(--background-alt);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .contact-method:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: var(--spacing-sm);
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .social-link {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--primary-color);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            margin-top: var(--spacing-lg);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Everyday AI</a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="uses.html" class="nav-link">Use Cases</a></li>
+                <li><a href="work.html" class="nav-link">Work</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="health.html" class="nav-link">Health</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Contact Us</h1>
+            <p class="mb-3">Have questions about AI? We're here to help! Get in touch with our team.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        <div class="grid">
+            <!-- Contact Information -->
+            <section class="mb-4">
+                <h2>Get in Touch</h2>
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <img src="images/email-icon.png" alt="Email icon" class="contact-icon">
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@everydayai.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <img src="images/twitter-icon.png" alt="Twitter icon" class="contact-icon">
+                        <div>
+                            <h3>Twitter</h3>
+                            <p>@EverydayAI</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <img src="images/linkedin-icon.png" alt="LinkedIn icon" class="contact-icon">
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Everyday AI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://twitter.com/EverydayAI" class="social-link" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://linkedin.com/company/everydayai" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/everydayai" class="social-link" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="mb-4">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select id="subject" name="subject" class="form-input" required>
+                            <option value="">Select a topic</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="technical">Technical Question</option>
+                            <option value="feedback">Website Feedback</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="mb-4">
+            <h2>Common Questions</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Response Time</h3>
+                    <p>We typically respond to inquiries within 24-48 hours during business days.</p>
+                </div>
+                <div class="card">
+                    <h3>Technical Support</h3>
+                    <p>For immediate technical help, please check our <a href="tutorials.html">tutorials</a> and <a href="faq.html">FAQ</a> sections first.</p>
+                </div>
+                <div class="card">
+                    <h3>Partnerships</h3>
+                    <p>Interested in partnering with us? Please include details about your organization and proposal in your message.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Map -->
+        <section class="mb-4">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM3nCsDQ2JzI5LjYiTiAxMjLCsDI1JzEwLjAiVw!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="text-center mb-4">
+            <h2>Stay Connected</h2>
+            <p class="mb-3">Subscribe to our newsletter for the latest AI news, tutorials, and updates.</p>
+            <div class="newsletter-form" style="max-width: 500px; margin: 0 auto;">
+                <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Everyday AI</h3>
+                <p>Empowering you to understand and harness the power of artificial intelligence in your daily life.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About AI</a></li>
+                    <li><a href="tools.html">AI Tools</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest AI news and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <p>&copy; 2025 Everyday AI. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</body>
+</html> 
